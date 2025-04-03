@@ -1,0 +1,13 @@
+ip a
+sudo apt update && sudo apt install openssh-server -y
+sudo systemctl status ssh
+sudo systemctl enable ssh
+sudo useradd -m victim
+sudo passwd victim
+password123
+sudo apt install apache2 -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+systemctl status apache2
+sudo apt install netcat -y
+nc -lvnp 4444
